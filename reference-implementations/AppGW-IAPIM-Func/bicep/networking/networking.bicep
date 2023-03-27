@@ -28,7 +28,7 @@ param workloadName string
 @allowed([
   'dev'
   'uat'
-  'prod'
+  'prd'
   'dr'
 ])
 param deploymentEnvironment string

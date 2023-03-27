@@ -41,7 +41,7 @@ param resourceSuffix string
 @allowed([
   'dev'
   'uat'
-  'prod'
+  'prd'
   'dr'
 ])
 param environment string
