@@ -1,6 +1,6 @@
 AZURE_LOCATION: 'westus2'
-RESOURCE_NAME_PREFIX: 'apimdemo'
-ENVIRONMENT_TAG: 'dev'
+RESOURCE_NAME_PREFIX: 'thig-apim'
+ENVIRONMENT_TAG: 'prd'
 DEPLOYMENT_NAME: 'ase-demo-deployment'
 VM_USERNAME: 'agent'
 ACCOUNT_NAME: 'craigspaterson'
