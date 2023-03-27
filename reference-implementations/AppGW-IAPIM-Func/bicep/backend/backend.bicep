@@ -349,7 +349,8 @@ resource privateDnsZones 'Microsoft.Network/privateDnsZones@2018-09-01' = {
 }
 
 resource privateDnsZoneLink 'Microsoft.Network/privateDnsZones/virtualNetworkLinks@2018-09-01' = {
-  name: '${privateDNSZoneName}/${uniqueString(vnet.id)}'
+  parent: privateDnsZones
+  name: uniqueString(vnet.id)
   location: 'global'
   properties: {
     registrationEnabled: false
@@ -358,13 +359,13 @@ resource privateDnsZoneLink 'Microsoft.Network/privateDnsZones/virtualNetworkLin
     }
   }
   dependsOn: [
-    privateDnsZones
     privateEndpoint
   ]
 }
 
 resource privateDnsZoneGroup 'Microsoft.Network/privateEndpoints/privateDnsZoneGroups@2020-03-01' = {
-  name: '${privateEndpoint_funcappAPIMCSBackendMicroServiceA_name}/default'
+  parent: privateEndpoint
+  name: 'default'
   properties: {
     privateDnsZoneConfigs: [
       {
