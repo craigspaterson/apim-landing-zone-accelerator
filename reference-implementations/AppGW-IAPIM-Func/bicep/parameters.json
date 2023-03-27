@@ -21,7 +21,7 @@
             "value": "azuredevops OR github OR none"
         },
         "environment" :{ 
-            "value": "dev"
+            "value": "prd"
         },
         "appGatewayFqdn" :{ 
             "value": "ENTER FQDN"
