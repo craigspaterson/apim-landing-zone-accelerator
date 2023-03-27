@@ -1,5 +1,5 @@
 var workload =                      'example'
-var environment =                   'prod'
+var environment =                   'prd'
 var location =                      'southcentralus'
 var resourceSuffix =                '${workload}-${environment}-${location}-001'
 
