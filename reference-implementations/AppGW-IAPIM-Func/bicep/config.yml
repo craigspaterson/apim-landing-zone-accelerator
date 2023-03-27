@@ -1,5 +1,5 @@
 AZURE_LOCATION: 'westus2'
-RESOURCE_NAME_PREFIX: 'thig-apim'
+RESOURCE_NAME_PREFIX: 'thigapim'
 ENVIRONMENT_TAG: 'prd'
 DEPLOYMENT_NAME: 'ase-demo-deployment'
 VM_USERNAME: 'agent'
